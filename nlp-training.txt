@@ -1,4 +1,0 @@
-https://www.kaggle.com/arunrk7/nlp-beginner-text-classification-using-lstm
-
-
-https://towardsdatascience.com/word-embeddings-for-sentiment-analysis-65f42ea5d26e
