@@ -61,7 +61,7 @@ class TrainModel(object):
         embedding_sequences = embedding_layer(sequence_input)
         x = SpatialDropout1D(0.2)(embedding_sequences)
         x = Conv1D(64, 5, activation='tanh')(x)
-        x = Bidirectional(LSTM(64, dropout=0.2))(x)
+        x = Bidirectional(LSTM(128, dropout=0.2))(x)
         x = Dense(512, activation='tanh')(x)
         x = Dropout(0.5)(x)  # set dropout rate to 0.5 to prevent over-fitting
         x = Dense(512, activation='tanh')(x)
@@ -82,7 +82,7 @@ class TrainModel(object):
         # mcp_save = ModelCheckpoint('.mdl_wts.hdf5', save_best_only=True, monitor='val_loss', mode='min')
 
         # adjust learning rate if validation loss plateaus
-        reduce_lr_on_plateau = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=7, verbose=1, mode='min')
+        reduce_lr_on_plateau = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=7, verbose=1, min_lr = 0.001, mode='min')
         # make sure we find a GPU, or training will take a very long time!
         print("Training on GPU...") if tf.config.list_physical_devices('GPU') \
             else print("Training on CPU...")
