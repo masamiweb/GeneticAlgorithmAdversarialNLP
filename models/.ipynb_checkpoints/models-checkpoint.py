@@ -6,6 +6,8 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.python.keras.callbacks import EarlyStopping
 from tensorflow.keras.callbacks import ReduceLROnPlateau
 
+# for more info see:
+# https://keras.io/examples/nlp/pretrained_word_embeddings/
 
 class TrainModel(object):
     def __init__(self,
@@ -100,3 +102,6 @@ class TrainModel(object):
 
     def get_history(self):
         return self.history_dict
+    
+    # Add save methods for model and dictionary
+    # add predict method to test model
