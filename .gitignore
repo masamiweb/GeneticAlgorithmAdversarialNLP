@@ -1,6 +1,7 @@
 /counter-fitted/
 /dataset/
 /imdb_dataset/
+/aux_files/
 /embeddings/
 /glove/
 nlp-training.txt
