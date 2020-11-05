@@ -139,15 +139,24 @@ def create_embeddings_matrix(glove_model, dictionary, full_dictionary, d=300):
     return embedding_matrix, unfound
 
 
-def pick_most_similar_words(src_word, dist_mat, ret_count=10, threshold=None):
+def closest_neighbours(src_word, dist_mat, ret_count=10, threshold=None):
     """
     embeddings is a matrix with (d, vocab_size)
     """
+    # get indices of nearest words sorted in ascending order, start from index 1: so we exclude the source word
     dist_order = np.argsort(dist_mat[src_word, :])[1:1 + ret_count]
+    
+    # creat list with all the distance measures found
     dist_list = dist_mat[src_word][dist_order]
+    
+    # nothing found
     if dist_list[-1] == 0:
         return [], []
+    
+    # creat a matrix with all ones same size as the distance list created
     mask = np.ones_like(dist_list)
+    
+    # if we've set a threshold - then we need to exclude all values not within that threshold
     if threshold is not None:
         mask = np.where(dist_list < threshold)
         return dist_order[mask], dist_list[mask]

@@ -139,15 +139,24 @@ def create_embeddings_matrix(glove_model, dictionary, full_dictionary, d=300):
     return embedding_matrix, unfound
 
 
-def pick_most_similar_words(src_word, dist_mat, ret_count=10, threshold=None):
+def closest_neighbours(src_word, dist_mat, ret_count=10, threshold=None):
     """
     embeddings is a matrix with (d, vocab_size)
     """
+    # get indices of nearest words sorted in ascending order, start from index 1: so we exclude the source word
     dist_order = np.argsort(dist_mat[src_word, :])[1:1 + ret_count]
+    
+    # creat list with all the distance measures found
     dist_list = dist_mat[src_word][dist_order]
+    
+    # nothing found
     if dist_list[-1] == 0:
         return [], []
+    
+    # creat a matrix with all ones same size as the distance list created
     mask = np.ones_like(dist_list)
+    
+    # if we've set a threshold - then we need to exclude all values not within that threshold
     if threshold is not None:
         mask = np.where(dist_list < threshold)
         return dist_order[mask], dist_list[mask]
@@ -167,40 +176,6 @@ https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 See this paper for more information:
 https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
 '''
-IMDB_DATA = 'imdb_dataset/imdb'
 
-MAX_VOCABULARY_SIZE = 50000
-GLOVE_DATA = 'glove/glove.840B.300d.txt'
-COUNTER_FITTED_VECTOR_DATA = 'counter-fitted/counter-fitted-vectors.txt'
-
-if not os.path.exists('aux_files'):
-    os.mkdir('aux_files')
-imdb_dataset = IMDBDataset(path=IMDB_DATA, max_vocab_size=MAX_VOCABULARY_SIZE)
-
-# save the dataset
-with open(('aux_files/dataset_%d.pkl' % MAX_VOCABULARY_SIZE), 'wb') as f:
-    pickle.dump(imdb_dataset, f)
-
-# create the glove embeddings matrix (used by the classification model)
-glove_model = load_glove_model(GLOVE_DATA)
-glove_embeddings, _ = create_embeddings_matrix(glove_model, imdb_dataset.dict, imdb_dataset.full_dict)
-
-print("SIZE OF GLOVE INDEX ",len(glove_model))
-print("SIZE OF MATRIX: ",len(glove_embeddings))
-print("Size of dict: ", len(imdb_dataset.dict))
-print("Size of full dict: ", len(imdb_dataset.full_dict))
-
-# save the glove_embeddings matrix
-np.save('aux_files/embeddings_glove_%d.npy' % MAX_VOCABULARY_SIZE, glove_embeddings)
-
-# Load the counterfitted-vectors (used by our attack)
-glove2 = load_glove_model(COUNTER_FITTED_VECTOR_DATA)
-# create embeddings matrix for our vocabulary
-counter_embeddings, missed = create_embeddings_matrix(glove2, imdb_dataset.dict, imdb_dataset.full_dict)
-
-# save the embeddings for both words we have found, and words that we missed.
-np.save(('aux_files/embeddings_counter_%d.npy' % MAX_VOCABULARY_SIZE), counter_embeddings)
-np.save(('aux_files/missed_embeddings_counter_%d.npy' % MAX_VOCABULARY_SIZE), missed)
-print('All done')
 
 
