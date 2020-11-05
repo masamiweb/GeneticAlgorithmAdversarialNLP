@@ -121,10 +121,10 @@ def load_glove_from_pickle(file_name):
         return pickle.load(f)
 
 
-def create_embeddings_matrix(glove_model, dictionary, full_dictionary, d=300):
+def create_embeddings_matrix(glove_model, dictionary,  dimension=300):
     MAX_VOCAB_SIZE = len(dictionary)
     # Matrix size is 300
-    embedding_matrix = np.zeros(shape=(d, MAX_VOCAB_SIZE + 1))
+    embedding_matrix = np.zeros(shape=(dimension, MAX_VOCAB_SIZE + 1))
     cnt = 0
     unfound = []
 
