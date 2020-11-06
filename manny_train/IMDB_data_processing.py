@@ -46,5 +46,7 @@ def process_dataset_IMDB(file_path: str):
     frames = [df_neg, df_pos]
     data_file = pd.concat(frames, axis=0)
     
+    #df4['column3'] = np.where(df4['gender'] == '', df4['name'], df4['gender'])
+    
     return data_file 
 

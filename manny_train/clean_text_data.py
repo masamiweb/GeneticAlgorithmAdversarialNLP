@@ -16,6 +16,8 @@ Extended by Manjinder Singh, to enable removal of html entities, and punctuation
 """
 FLAGS = re.MULTILINE | re.DOTALL
 
+
+
 # additional html entities added to remove (Manjinder Singh)
 html_entities = [" quot ", " amp ", " lt ", " gt ", " circ ", " tilde ", " ensp ", " emsp ", " thinsp ", " zwnj ", " zwj ", 
                      " lrm ", " rlm ", " ndash ", " mdash ", " lsquo ", " rsquo ", " sbquo ", " ldquo ", " rdquo ", " bdquo ", " permil ", " lsaquo ", " rsaquo "]
@@ -91,31 +93,15 @@ def tokenize(text):
 
     return text.lower()
 
-from io import StringIO
-from html.parser import HTMLParser
+cleanr = re.compile('<.*?>|&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6});')
+def cleanhtml(raw_html):
+    cleantext = re.sub(cleanr, '', raw_html)
+    return cleantext
 
-class MLStripper(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.reset()
-        self.strict = False
-        self.convert_charrefs= True
-        self.text = StringIO()
-        
-    def handle_data(self, d):
-        self.text.write(d)
-        
-    def get_data(self):
-        return self.text.getvalue()
-
-def strip_tags(html):
-    s = MLStripper()
-    s.feed(html)
-    return s.get_data()
 
 def clean_and_return(data_frame, text_col_name: str):
     print("Cleaning dataset, please wait ...")
-    data_frame[text_col_name] = data_frame[text_col_name].apply(lambda x: strip_tags(x))
+    data_frame[text_col_name] = data_frame[text_col_name].apply(lambda x: cleanhtml(x))
     data_frame[text_col_name] = data_frame[text_col_name].apply(lambda x: tokenize(x))
     print("Dataset cleaned!")
     return data_frame
