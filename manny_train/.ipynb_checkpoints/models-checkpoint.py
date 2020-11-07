@@ -21,8 +21,8 @@ class TrainModel(object):
                  input_dim=25000,  # i.e maximum vocabulary size
                  input_length=256,  # i.e. length of sequence after adding padding
                  trainable=True,  # pre-trained embeddings, so set to False to prevents weights update during training
-                 output_dim=100,  # i.e. embeddings dimension
-                 learning_rate=1e-3  # 0.001 for default learning rate
+                 output_dim=300,  # i.e. embeddings dimension
+                 learning_rate=1e-4  # 0.001 for default learning rate
                  ):
         self.embeddings_matrix = embeddings_matrix
         self.train_x = train_x

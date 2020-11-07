@@ -154,6 +154,7 @@ def closest_neighbours(src_word, dist_mat, ret_count=10, threshold=None):
         return [], []
     
     # creat a matrix with all ones same size as the distance list created
+    #mask = np.zeros(dist_list)
     mask = np.ones_like(dist_list)
     
     # if we've set a threshold - then we need to exclude all values not within that threshold
