@@ -1,6 +1,19 @@
 import os
 import pandas as pd
 
+'''
+Large movie review database for binary sentiment classification
+This is a dataset for binary sentiment classification containing substantially more data than previous 
+benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. 
+There is additional unlabeled data for use as well. Raw text and already processed bag of words formats are provided. 
+See the README file contained in the release for more details.
+Download from:
+https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+
+See this paper for more information:
+https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
+'''
+
 def process_dataset_IMDB(file_path: str):
     """
     Need to redo this to deal with the IMDB dataset - rename columns to match the sentiments140 dataset so we can 

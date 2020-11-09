@@ -141,7 +141,7 @@ def create_embeddings_matrix(glove_model, dictionary,  dimension=300):
 
 def closest_neighbours(src_word, dist_mat, ret_count=10, threshold=None):
     """
-    embeddings is a matrix with (d, vocab_size)
+    embeddings is a matrix with (max_vocabulary_size, dimension)
     """
     # get indices of nearest words sorted in ascending order, start from index 1: so we exclude the source word
     dist_order = np.argsort(dist_mat[src_word, :])[1:1 + ret_count]
@@ -165,18 +165,7 @@ def closest_neighbours(src_word, dist_mat, ret_count=10, threshold=None):
         return dist_order, dist_list
 
 
-'''
-Large movie review database for binary sentiment classification
-This is a dataset for binary sentiment classification containing substantially more data than previous 
-benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. 
-There is additional unlabeled data for use as well. Raw text and already processed bag of words formats are provided. 
-See the README file contained in the release for more details.
-Download from:
-https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 
-See this paper for more information:
-https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
-'''
 
 
 
