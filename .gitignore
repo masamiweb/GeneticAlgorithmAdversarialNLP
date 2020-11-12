@@ -2,6 +2,7 @@
 /dataset/
 /imdb_dataset/
 /s140_dataset/
+/language_model/
 /aux_files/
 /embeddings/
 /glove/
