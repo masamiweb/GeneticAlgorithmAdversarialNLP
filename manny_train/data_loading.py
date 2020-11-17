@@ -15,10 +15,7 @@ https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
 '''
 
 def process_dataset_IMDB(file_path: str):
-    """
-    Need to redo this to deal with the IMDB dataset - rename columns to match the sentiments140 dataset so we can 
-    re-use all th e below methods without changing anything
-    """
+    
 
     
     pos_train = file_path + "train/pos"
@@ -62,4 +59,22 @@ def process_dataset_IMDB(file_path: str):
     #df4['column3'] = np.where(df4['gender'] == '', df4['name'], df4['gender'])
     
     return data_file 
+
+def process_dataset_Sentiment140(file_path: str ):
+    # load the data file into a data frame
+    df = pd.read_csv(file_path, encoding='latin-1', header=None) # changed encoding to 'latin-1'
+    
+    # Rename the columns so we can reference them later
+    df.columns = ['sentiment', 'id', 'date', 'query', 'user_id', 'text']
+    
+    # drop all the columns we don't need
+    df = df.drop(['id', 'date', 'query', 'user_id'], axis=1) 
+    
+    # change all 4's to 1's (just for neatness)
+    df.loc[df['sentiment'] == 4, 'sentiment'] = 1
+    
+    # sort all the rows by the sentiment columns
+    df.sort_values(by=['sentiment'])
+    
+    return df
 

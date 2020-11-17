@@ -12,7 +12,8 @@ http://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
 
 this version from gist.github.com/ppope > preprocess_twitter.py
 
-Extended by Manjinder Singh, to enable removal of html entities, and punctuation symbols (except apostrophe)
+Extended by Manjinder Singh:
+to enable removal of html entities, and punctuation symbols (except apostrophe), can be used to clean most text data files
 """
 FLAGS = re.MULTILINE | re.DOTALL
 
@@ -70,9 +71,7 @@ def tokenize(text):
     text = re_sub(r"\b(\S*?)(.)\2{2,}\b", r"\1\2 ") # remove elongated words and trim eg. shorten 'Awwwwwwwww' to 'Aw'
     
 
-    ## -- I just don't understand why the Ruby script adds <allcaps> to everything so I limited the selection.
-    # text = re_sub(r"([^a-z0-9()<>'`\-]){2,}", allcaps)
-    #text = re_sub(r"([A-Z]){2,}", allcaps)  # moved below -amackcrane
+    
 
     # amackcrane additions
     text = re_sub(r"([a-zA-Z<>()])([?!.:;,])", r"\1 \2")
