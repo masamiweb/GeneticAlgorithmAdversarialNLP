@@ -99,8 +99,8 @@ def cleanhtml(raw_html):
 
 
 def clean_and_return(data_frame, text_col_name: str):
-    print("Cleaning dataset, please wait ...")
+
     data_frame[text_col_name] = data_frame[text_col_name].apply(lambda x: cleanhtml(x))
     data_frame[text_col_name] = data_frame[text_col_name].apply(lambda x: tokenize(x))
-    print("Dataset cleaned!")
+
     return data_frame

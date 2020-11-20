@@ -1,5 +1,8 @@
 import os
 import pandas as pd
+import string 
+import re
+from . import normalize_dataset as nd
 
 '''
 Large movie review database for binary sentiment classification
@@ -16,8 +19,7 @@ https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
 
 def process_dataset_IMDB(file_path: str):
     
-
-    
+    print("Creating dataset, please wait ...")
     pos_train = file_path + "train/pos"
     pos_train_files = [pos_train + '/' + x for x in os.listdir(pos_train) if x.endswith('.txt')]
    
@@ -51,16 +53,29 @@ def process_dataset_IMDB(file_path: str):
             df_neg = df_neg.append({'sentiment': 0, 'text': line}, ignore_index=True)
             f.close()
     
-#     print("neg shape: ", df_neg.shape)
-#     print("pos shape: ", df_pos.shape)
+    # add the two data files into one dataframe
     frames = [df_neg, df_pos]
-    data_file = pd.concat(frames, axis=0)
+    df = pd.concat(frames, axis=0)
     
-    #df4['column3'] = np.where(df4['gender'] == '', df4['name'], df4['gender'])
+    #set column data types
+    df['sentiment'] = df['sentiment'].astype(str).astype(int)
+    df['text'] = df['text'].astype(str)
     
-    return data_file 
+    df = df.sample(frac = 1, random_state = 7) 
+    
+    # there is no need for normalizing, it is done just to be able to display wordcloud and other graphs cleanly
+    # normalizing is done in the model as a callback used by TextVectorization 
+    print("Normalizing dataset, please wait...")
+    df = nd.clean_and_return(df, 'text')
+    
+    
+    print("Dataset created!\n")
+    
+    return df 
 
 def process_dataset_Sentiment140(file_path: str ):
+    
+    print("Creating dataset, please wait ...")
     # load the data file into a data frame
     df = pd.read_csv(file_path, encoding='latin-1', header=None) # changed encoding to 'latin-1'
     
@@ -73,8 +88,16 @@ def process_dataset_Sentiment140(file_path: str ):
     # change all 4's to 1's (just for neatness)
     df.loc[df['sentiment'] == 4, 'sentiment'] = 1
     
-    # sort all the rows by the sentiment columns
-    df.sort_values(by=['sentiment'])
+    df['sentiment'] = df['sentiment'].astype(str).astype(int)
+    df['text'] = df['text'].astype(str)
     
+    # there is no need for normalizing, it is done just to be able to display wordcloud and other graphs cleanly
+    # normalizing is done in the model as a callback used by TextVectorization 
+    print("Normalizing dataset, please wait...")
+    df = nd.clean_and_return(df,'text')
+    
+    df = df.sample(frac = 1, random_state = 7) 
+    print("Dataset created!\n")
     return df
+
 
