@@ -20,20 +20,20 @@ https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf
 def process_dataset_IMDB(file_path: str):
     
     print("Creating dataset, please wait ...")
-    pos_train = file_path + "train/pos"
+    pos_train = file_path + "/train/pos"
     pos_train_files = [pos_train + '/' + x for x in os.listdir(pos_train) if x.endswith('.txt')]
    
-    pos_test = file_path + "test/pos"
+    pos_test = file_path + "/test/pos"
     pos_test_files = [pos_test + '/' + x for x in os.listdir(pos_test) if x.endswith('.txt')]
     
     # list containing the file path to all positive sentiment text
     all_pos = pos_train_files + pos_test_files
     
     
-    neg_train = file_path + "train/neg"
+    neg_train = file_path + "/train/neg"
     neg_train_files = [neg_train + '/' + x for x in os.listdir(neg_train) if x.endswith('.txt')]
     
-    neg_test = file_path + "test/neg"
+    neg_test = file_path + "/test/neg"
     neg_test_files = [neg_test + '/' + x for x in os.listdir(neg_test) if x.endswith('.txt')]
     
     # list containing the file path to all negative sentiment text

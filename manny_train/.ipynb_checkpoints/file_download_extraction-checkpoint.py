@@ -2,6 +2,7 @@ import os
 import requests 
 import tarfile
 import shutil
+import zipfile
 
    
 def download(url: str, dest_folder: str):      
@@ -48,9 +49,31 @@ def get_directory_name(path):
                 dir_list.append(file)
     return dir_list
 
-         
+
+def extract_zip_file(file_path: str, destination_folder: str):
+    with zipfile.ZipFile(file_path, 'r') as zip_ref:
+        zip_ref.extractall(destination_folder)
+    os.remove(file_path)
+
     
 def rename_folder(from_folder: str, to_folder: str):  
     print("Renaming folder: ", from_folder, " to: ", to_folder)
     os.rename(from_folder, to_folder)
     return
+
+def rename_s140_file(folder_path):
+    for entry in os.listdir(folder_path):
+        if os.path.isdir(entry):
+            continue
+        values = entry.strip().split('.')
+        if values[-1] == '.zip':
+            os.remove(os.path.join(folder_path, entry))
+        else:
+            if entry.startswith('train'):
+                os.rename(os.path.join(folder_path, entry),os.path.join(folder_path,'train.csv'))
+                print("Renamed:\t", os.path.join(folder_path, entry), " To:\t", os.path.join(folder_path,'train.csv'))
+            else:
+                os.remove(os.path.join(folder_path, entry))
+    
+            
+    
