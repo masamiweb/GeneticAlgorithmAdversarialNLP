@@ -22,7 +22,7 @@ def download(url: str, dest_folder: str):
                     f.flush()
                     os.fsync(f.fileno())
         print("Download complete!")
-    else:  # HTTP status code 4XX/5XX
+    else:  # HTTP status code e.g 4xx or 5xx codes
         print("Download failed: status code {}\n{}".format(r.status_code, r.text)) 
     return
 
@@ -39,7 +39,6 @@ def extract_tar_file(file_path: str, destination_folder: str):
         print("File extracted in folder: ",destination_folder)
     return
        
-
         
 def get_directory_name(path):  
     dir_list = []
@@ -61,19 +60,15 @@ def rename_folder(from_folder: str, to_folder: str):
     os.rename(from_folder, to_folder)
     return
 
+
 def rename_s140_file(folder_path):
     for entry in os.listdir(folder_path):
         if os.path.isdir(entry):
             continue
         values = entry.strip().split('.')
-        if values[-1] == '.zip':
-            os.remove(os.path.join(folder_path, entry))
-        else:
-            if entry.startswith('train'):
-                os.rename(os.path.join(folder_path, entry),os.path.join(folder_path,'train.csv'))
-                print("Renamed:\t", os.path.join(folder_path, entry), " To:\t", os.path.join(folder_path,'train.csv'))
-            else:
-                os.remove(os.path.join(folder_path, entry))
-    
+        if entry.startswith('train') and values[-1] != 'zip':
+            os.rename(os.path.join(folder_path, entry),os.path.join(folder_path,'train.csv'))
+            print("Renamed:\t", os.path.join(folder_path, entry), " To:\t", os.path.join(folder_path,'train.csv'))
+            return
             
     
