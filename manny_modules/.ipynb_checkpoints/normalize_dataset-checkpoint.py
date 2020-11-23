@@ -69,9 +69,7 @@ def tokenize(text):
     text = re_sub(r"#\w+", "")  # remove hashtag
     text = re_sub(r"([!?.]){2,}", r"\1 ") # remove punctuation repetitions eg. "!!!" 
     text = re_sub(r"\b(\S*?)(.)\2{2,}\b", r"\1\2 ") # remove elongated words and trim eg. shorten 'Awwwwwwwww' to 'Aw'
-    
 
-    
 
     # amackcrane additions
     text = re_sub(r"([a-zA-Z<>()])([?!.:;,])", r"\1 \2")

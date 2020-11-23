@@ -6,5 +6,6 @@
 /aux_files/
 /embeddings/
 /glove/
+/unused_modules/
 nlp-training.txt
 Clustering.ipynb
