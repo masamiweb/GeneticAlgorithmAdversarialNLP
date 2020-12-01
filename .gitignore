@@ -8,5 +8,6 @@
 /glove/
 /unused_modules/
 /language_model/
+/django/
 nlp-training.txt
 Clustering.ipynb
