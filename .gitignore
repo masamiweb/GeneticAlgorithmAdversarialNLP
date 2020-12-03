@@ -9,5 +9,6 @@
 /unused_modules/
 /language_model/
 /django/
+/test_data/
 nlp-training.txt
 Clustering.ipynb
