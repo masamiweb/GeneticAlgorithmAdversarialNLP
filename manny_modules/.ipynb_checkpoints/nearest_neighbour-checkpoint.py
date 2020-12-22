@@ -1,8 +1,3 @@
-"""
-    Author: Manjinder Singh
-
-"""
-
 import numpy as np
 
 
@@ -27,7 +22,7 @@ def closest_neighbours(input_word, distance_matrix, number_of_words_to_return=10
     
     # creat a matrix with all zeros same size as the distance list created, to use as mask
     mask = np.zeros_like(distance_to_neighbour_list)
-    #mask = np.ones_like(distance_to_neighbour_list)
+
     
     # if we've set a max_distance - then we need to exclude all values over max_distance
     if max_distance is None:
