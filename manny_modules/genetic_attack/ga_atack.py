@@ -1,3 +1,6 @@
+
+
+
 class GeneticAtack(object):
     def __init__(self, sess, model, batch_model,
                  neighbour_model,
