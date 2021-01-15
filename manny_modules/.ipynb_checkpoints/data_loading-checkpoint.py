@@ -63,6 +63,8 @@ def process_dataset_IMDB(file_path: str):
     
     df = df.sample(frac = 1, random_state = 7) 
     
+    df.to_csv('../imdb_dataset/raw_data_file.csv', index = False)
+    
     # there is no need for normalizing, it is done just to be able to display wordcloud and other graphs cleanly
     # normalizing is done in the model as a callback used by TextVectorization 
     print("Normalizing dataset, please wait...")
