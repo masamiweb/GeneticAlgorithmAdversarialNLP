@@ -1,10 +1,5 @@
 from manny_modules import download_utils as dutils
 
-
-
-
-
-
 def download_dataset():
     from_folder =""
     to_folder = DATA_SET_LOCATION 
