@@ -1,7 +1,9 @@
 # Vulnerability of Natural Language Classifiers to Evolutionary Generated Adversarial Text
 
-## ToDo
-- 
+## ToDo (last updated: 2021W44)
+- [Mohamed] Paper section 2 (related work) + investigating implementaiton
+- [Sandy] Paper section 5 (results) + investigating implementaiton
+- [Mani] Check sections 3-5 for other resources (refs, datasets, etc...) 
 ---
 ## Datasets
 
