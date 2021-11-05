@@ -7,7 +7,7 @@
 
 ---
 ### Implementations
-- [BERT-Attack](https://github.com/LinyangLee/BERT-Attack)
+- [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^1]
 
 ---
 ### Colab notebooks
@@ -23,3 +23,6 @@ Computing Science honours dissertation project aimed at generating adversarial e
 - 01-Build_model_and_Distance_Matrix.ipynb
 - 02-Generate_Attacks.ipynb
 - 03-Stats.ipynb
+
+
+[^1]: Li, Linyang, Ruotian Ma, Qipeng Guo, Xiangyang Xue, and Xipeng Qiu. "BERT-ATTACK: Adversarial Attack against BERT Using BERT." In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 6193-6202. 2020.
