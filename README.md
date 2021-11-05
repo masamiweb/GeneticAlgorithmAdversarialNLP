@@ -1,5 +1,21 @@
 # Vulnerability of Natural Language Classifiers to Evolutionary Generated Adversarial Text
 
+## ToDo
+- 
+---
+## Datasets
+
+---
+### Implementations
+- [BERT-Attack](https://github.com/LinyangLee/BERT-Attack)
+
+---
+### Colab notebooks
+- 
+--- 
+
+
+
 Computing Science honours dissertation project aimed at generating adversarial examples against a sentiment analysis model, using genetic algorithms. 
 
 ### To run the code, run the Jupyter notebooks in the following order
