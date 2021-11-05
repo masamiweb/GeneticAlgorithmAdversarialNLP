@@ -6,16 +6,22 @@
 - [Mani] Check sections 3-5 for other resources (refs, datasets, etc...) 
 ---
 ## Datasets
-
+- [IMDB link1](https://datasets.imdbws.com) -- [IMDB link2](http://ai.stanford.edu/~amaas/data/sentiment/)
+- [Yelp link1](https://www.yelp.com/dataset) -- [Yelp link2](https://www.kaggle.com/yelp-dataset/yelp-dataset)
+- [FAKE](https://www.kaggle.com/c/fake-news/data)
+- [AG News](http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
 ---
 ### Implementations
 - [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^1]
-
 ---
 ### Colab notebooks
 - 
---- 
+---
+## Refs
+- [HuggingFace - Datasets](https://huggingface.co/datasets)
+- [PapersWithCode - Datasets](https://paperswithcode.com/task/text-classification)
 
+---
 
 
 Computing Science honours dissertation project aimed at generating adversarial examples against a sentiment analysis model, using genetic algorithms. 
