@@ -20,7 +20,7 @@
 - [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^4]
 - [GA/alzantot](https://github.com/QData/TextAttack) [^5]
 ---
-### Text Classification Models
+### [Text Classification Models](https://textattack.readthedocs.io/en/latest/3recipes/models.html)
 - wordLSTM [^6]
 - wordCNN [^7]
 - BERT [^8]
