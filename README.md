@@ -12,14 +12,19 @@
 - [AG News](http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
 - [GLUE](https://gluebenchmark.com)
 ---
-### Implementations
+## Adversarial Attack Models 
 - [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^1]
 - [TextFooler](https://github.com/jind11/TextFooler) [^2]
 - [BAE](https://github.com/QData/TextAttack) [^3]
 - [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^4]
 - [GA/alzantot](https://github.com/QData/TextAttack) [^5]
 ---
-### Colab notebooks
+### Text Classification Models
+- wordLSTM [^6]
+- wordCNN [^7]
+- BERT [^8]
+---
+## Colab notebooks
 - 
 ---
 ## Refs
@@ -33,3 +38,6 @@
 [^3]: Garg, Siddhant, and Goutham Ramakrishnan. "BAE: BERT-based Adversarial Examples for Text Classification." In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 6174-6181. 2020.
 [^4]: Guo, Chuan, Alexandre Sablayrolles, Hervé Jégou, and Douwe Kiela. "Gradient-based Adversarial Attacks against Text Transformers." arXiv preprint arXiv:2104.13733 (2021).
 [^5]: Alzantot, Moustafa, Yash Sharma, Ahmed Elgohary, Bo-Jhang Ho, Mani Srivastava, and Kai-Wei Chang. "Generating Natural Language Adversarial Examples." In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pp. 2890-2896. 2018.
+[^6]: Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term memory." Neural computation 9, no. 8 (1997): 1735-1780.
+[^7]: Kim, Yoon. “Convolutional Neural Networks for Sentence Classification.” EMNLP (2014).
+[^8]: Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018). 
