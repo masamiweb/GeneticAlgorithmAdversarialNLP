@@ -25,7 +25,14 @@
 - wordCNN [^7]
 - BERT [^8]
 ---
-## Colab notebooks
+## Evaluation Metrics
+- Table: black-box attack evaluation (datasets, text classification models, attack models, original accuracy, adversarial accuracy, % Perturbed Word, Semantic Similarity, Query Number, Average Text Length)
+- Table: runtime comparison (attack models vs datasets)
+- Table: datasets stats
+- Graph: attack effectiveness over dataset (x-axis: max % perturbation, y-axis: test accuracy, lines: attack models)
+- Table: Qualitative examples (attack models vs datasets) showing replacements and insertions
+---
+## Colab Notebooks
 - 
 ---
 ## Refs
