@@ -8,9 +8,10 @@
 ## Datasets
 - [IMDB link1](https://datasets.imdbws.com) -- [IMDB link2](http://ai.stanford.edu/~amaas/data/sentiment/)
 - [Yelp link1](https://www.yelp.com/dataset) -- [Yelp link2](https://www.kaggle.com/yelp-dataset/yelp-dataset)
-- [FAKE](https://www.kaggle.com/c/fake-news/data)
 - [AG News](http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
-- [GLUE](https://gluebenchmark.com)
+- [Movie Reviews - Rotten Tomatoes](https://www.cs.cornell.edu/people/pabo/movie-review-data/)
+- [SST-2 - GLUE](https://gluebenchmark.com)
+- [FAKE](https://www.kaggle.com/c/fake-news/data) >>> no pre-trained models
 ---
 ## Adversarial Attack Models 
 - [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^1]
