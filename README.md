@@ -33,7 +33,7 @@
 - Table: Qualitative examples (attack models vs datasets) showing replacements and insertions
 ---
 ## Colab Notebooks
-- 
+- [Playground](https://colab.research.google.com/drive/1Hs_E6F0_h5AYhUj3o5wNI5LeF5Ashk8p?usp=sharing)
 ---
 ## Refs
 - [HuggingFace - Datasets](https://huggingface.co/datasets)
