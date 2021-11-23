@@ -34,6 +34,7 @@
 ---
 ## Colab Notebooks
 - [Playground](https://colab.research.google.com/drive/1Hs_E6F0_h5AYhUj3o5wNI5LeF5Ashk8p?usp=sharing)
+- [TextAttack-Playground-CMD](https://colab.research.google.com/drive/1rRdiD5oQy_ohHrIDF4Nsal7Fdom-Q2D-?usp=sharing)
 ---
 ## Refs
 - [HuggingFace - Datasets](https://huggingface.co/datasets)
