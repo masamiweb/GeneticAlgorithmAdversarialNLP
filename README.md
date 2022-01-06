@@ -23,8 +23,8 @@
 - [TextFooler - 2019](https://github.com/jind11/TextFooler) [^5]
 - [BAE - 2019](https://github.com/QData/TextAttack) [^6]
 - [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^7] --> NOT POSSIBLE, complicated to use!
-- [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8]
-- [CLARE - 2020](https://github.com/QData/TextAttack) [^9]
+- [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8] --> Very slow to execute!
+- [CLARE - 2020](https://github.com/QData/TextAttack) [^9] --> GPU out of memory error! 
 - [TextBugger - 2018](https://github.com/QData/TextAttack) [^10]
 - [A2T - 2021](https://github.com/QData/TextAttack) [^11]
 ---
