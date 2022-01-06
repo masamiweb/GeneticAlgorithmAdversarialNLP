@@ -19,7 +19,7 @@
 - [BAE](https://github.com/QData/TextAttack) [^3]
 - [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^4] --> NOT POSSIBLE, complicated to use!
 - [GA/alzantot](https://github.com/QData/TextAttack) [^5]
-- [CLARE](https://github.com/QData/TextAttack)[^9]
+- [CLARE](https://github.com/QData/TextAttack) [^9]
 ---
 ### [Text Classification Models](https://textattack.readthedocs.io/en/latest/3recipes/models.html)
 - wordLSTM [^6]
