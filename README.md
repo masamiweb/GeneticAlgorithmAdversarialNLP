@@ -17,8 +17,9 @@
 - [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^1]
 - [TextFooler](https://github.com/jind11/TextFooler) [^2]
 - [BAE](https://github.com/QData/TextAttack) [^3]
-- [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^4]
+- [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^4] --> NOT POSSIBLE, complicated to use!
 - [GA/alzantot](https://github.com/QData/TextAttack) [^5]
+- [CLARE](https://github.com/QData/TextAttack)[^9]
 ---
 ### [Text Classification Models](https://textattack.readthedocs.io/en/latest/3recipes/models.html)
 - wordLSTM [^6]
@@ -51,3 +52,4 @@
 [^6]: Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term memory." Neural computation 9, no. 8 (1997): 1735-1780.
 [^7]: Kim, Yoon. “Convolutional Neural Networks for Sentence Classification.” EMNLP (2014).
 [^8]: Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018). 
+[^9] Li, Dianqi, Yizhe Zhang, Hao Peng, Liqun Chen, Chris Brockett, Ming-Ting Sun, and William B. Dolan. "Contextualized Perturbation for Textual Adversarial Attack." In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pp. 5053-5069. 2021.
