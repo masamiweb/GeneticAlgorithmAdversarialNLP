@@ -19,12 +19,14 @@
 - BERT [^3]
 ---
 ## Adversarial Attack Models 
-- [BERT-Attack](https://github.com/LinyangLee/BERT-Attack) [^4]
-- [TextFooler](https://github.com/jind11/TextFooler) [^5]
-- [BAE](https://github.com/QData/TextAttack) [^6]
+- [BERT-Attack - 2019](https://github.com/LinyangLee/BERT-Attack) [^4]
+- [TextFooler - 2019](https://github.com/jind11/TextFooler) [^5]
+- [BAE - 2019](https://github.com/QData/TextAttack) [^6]
 - [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^7] --> NOT POSSIBLE, complicated to use!
-- [GA/alzantot](https://github.com/QData/TextAttack) [^8]
-- [CLARE](https://github.com/QData/TextAttack) [^9]
+- [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8]
+- [CLARE - 2020](https://github.com/QData/TextAttack) [^9]
+- [TextBugger - 2018](https://github.com/QData/TextAttack) [^10]
+- [A2T - 2021](https://github.com/QData/TextAttack) [^11]
 ---
 ## Evaluation Metrics
 - Table: black-box attack evaluation (datasets, text classification models, attack models, original accuracy, adversarial accuracy, % Perturbed Word, Semantic Similarity, Query Number, Average Text Length)
@@ -53,3 +55,5 @@
 [^7]: Guo, Chuan, Alexandre Sablayrolles, Hervé Jégou, and Douwe Kiela. "Gradient-based Adversarial Attacks against Text Transformers." arXiv preprint arXiv:2104.13733 (2021).
 [^8]: Alzantot, Moustafa, Yash Sharma, Ahmed Elgohary, Bo-Jhang Ho, Mani Srivastava, and Kai-Wei Chang. "Generating Natural Language Adversarial Examples." In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pp. 2890-2896. 2018.
 [^9]: Li, Dianqi, Yizhe Zhang, Hao Peng, Liqun Chen, Chris Brockett, Ming-Ting Sun, and William B. Dolan. "Contextualized Perturbation for Textual Adversarial Attack." In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pp. 5053-5069. 2021.
+[^10]: Li, J., S. Ji, T. Du, B. Li, and T. Wang. "TextBugger: Generating Adversarial Text Against Real-world Applications." In 26th Annual Network and Distributed System Security Symposium. 2019.
+[^11]: Yoo, Jin Yong, and Yanjun Qi. "Towards Improving Adversarial Training of NLP Models." In Findings of the Association for Computational Linguistics: EMNLP 2021, pp. 945-956. 2021.
