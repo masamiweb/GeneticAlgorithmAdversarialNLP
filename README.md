@@ -11,7 +11,7 @@
 - [AG News](http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
 - [Movie Reviews - Rotten Tomatoes](https://www.cs.cornell.edu/people/pabo/movie-review-data/)
 - [SST-2 - GLUE](https://gluebenchmark.com)
-- [FAKE](https://www.kaggle.com/c/fake-news/data) >>> no pre-trained models
+- [FAKE](https://www.kaggle.com/c/fake-news/data)
 ---
 ### [Text Classification Models](https://textattack.readthedocs.io/en/latest/3recipes/models.html)
 - wordLSTM [^1]
@@ -22,9 +22,9 @@
 - [BERT-Attack - 2019](https://github.com/LinyangLee/BERT-Attack) [^4]
 - [TextFooler - 2019](https://github.com/jind11/TextFooler) [^5]
 - [BAE - 2019](https://github.com/QData/TextAttack) [^6]
-- [GBDA - 2021](https://github.com/facebookresearch/text-adversarial-attack) [^7] --> NOT POSSIBLE, complicated to use!
-- [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8] --> Very slow to execute!
-- [CLARE - 2020](https://github.com/QData/TextAttack) [^9] --> GPU out of memory error! 
+- [GBDA - 2021](https://github.com/facebookresearch/text-adversarial-attack) [^7] 
+- [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8]
+- [CLARE - 2020](https://github.com/QData/TextAttack) [^9]
 - [TextBugger - 2018](https://github.com/QData/TextAttack) [^10]
 - [A2T - 2021](https://github.com/QData/TextAttack) [^11]
 - [fast-alzantot - 2019](https://github.com/QData/TextAttack) [^12]
@@ -46,10 +46,14 @@
 - [results](https://drive.google.com/drive/folders/1jnI7Tqe-zkJEIScX-vYyj-c2bGGpx5FZ?usp=sharing)
 - [Attack] GA/alzantot -- 2018 : Very slow to execute! (removed)
 - [Attack] GBDA -- 2021 : NOT POSSIBLE, complicated to use! (removed)
+- [Attack] CLARE - 2020 : GPU out of memory error! (removed)
 - [Attack] fast-alzantot -- 2019 : still very slow! (removed)
-- [Dataset] yelp --> very big dataset, taking forever to run! (removed)
+- [Dataset] yelp : very big dataset, taking forever to run! (removed)
+- [Dataset] FAKE : no pre-trained models! (removed)
 - [[bug]NLP_TextAttack_Test_api--Bug-mr__cnn__a2t](https://colab.research.google.com/drive/10pV0ArRPIG0DjmgPjIXZhldCLRAciYbP?usp=sharing) -- [reported bug](https://github.com/QData/TextAttack/issues/601)
 - [[semi-bug]NLP_TextAttack_Test_api--Bug-mr__lstm__bert-attack](https://colab.research.google.com/drive/1Efk4dp9gHrtvTkSIv_KxY8l6J808BCx1?usp=sharing) -- under investigation!!
+
+
 ---
 ## Refs
 - [HuggingFace - Datasets](https://huggingface.co/datasets)
