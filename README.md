@@ -22,11 +22,12 @@
 - [BERT-Attack - 2019](https://github.com/LinyangLee/BERT-Attack) [^4]
 - [TextFooler - 2019](https://github.com/jind11/TextFooler) [^5]
 - [BAE - 2019](https://github.com/QData/TextAttack) [^6]
-- [GBDA](https://github.com/facebookresearch/text-adversarial-attack) [^7] --> NOT POSSIBLE, complicated to use!
+- [GBDA - 2021](https://github.com/facebookresearch/text-adversarial-attack) [^7] --> NOT POSSIBLE, complicated to use!
 - [GA/alzantot - 2018](https://github.com/QData/TextAttack) [^8] --> Very slow to execute!
 - [CLARE - 2020](https://github.com/QData/TextAttack) [^9] --> GPU out of memory error! 
 - [TextBugger - 2018](https://github.com/QData/TextAttack) [^10]
 - [A2T - 2021](https://github.com/QData/TextAttack) [^11]
+- [fast-alzantot - 2019](https://github.com/QData/TextAttack) [^12]
 ---
 ## Evaluation Metrics
 - Table: black-box attack evaluation (datasets, text classification models, attack models, original accuracy, adversarial accuracy, % Perturbed Word, Semantic Similarity, Query Number, Average Text Length)
@@ -39,6 +40,16 @@
 - [Playground](https://colab.research.google.com/drive/1Hs_E6F0_h5AYhUj3o5wNI5LeF5Ashk8p?usp=sharing)
 - [TextAttack-Playground-CMD](https://colab.research.google.com/drive/1rRdiD5oQy_ohHrIDF4Nsal7Fdom-Q2D-?usp=sharing)
 - [TextAttack-Playground-API](https://colab.research.google.com/drive/1uU4xYNGfpvv-H2eirRr9U67GYTkMoBnm?usp=sharing)
+- [TextAttack-Playground-API-V2](https://colab.research.google.com/drive/1seoSdC419jxFsJotr3m39AIhjDuV21co?usp=sharing)
+
+## Notes:
+- [results](https://drive.google.com/drive/folders/1jnI7Tqe-zkJEIScX-vYyj-c2bGGpx5FZ?usp=sharing)
+- [Attack] GA/alzantot -- 2018 : Very slow to execute! (removed)
+- [Attack] GBDA -- 2021 : NOT POSSIBLE, complicated to use! (removed)
+- [Attack] fast-alzantot -- 2019 : still very slow! (removed)
+- [Dataset] yelp --> very big dataset, taking forever to run! (removed)
+- [[bug]NLP_TextAttack_Test_api--Bug-mr__cnn__a2t](https://colab.research.google.com/drive/10pV0ArRPIG0DjmgPjIXZhldCLRAciYbP?usp=sharing) -- [reported bug](https://github.com/QData/TextAttack/issues/601)
+- [[semi-bug]NLP_TextAttack_Test_api--Bug-mr__lstm__bert-attack](https://colab.research.google.com/drive/1Efk4dp9gHrtvTkSIv_KxY8l6J808BCx1?usp=sharing) -- under investigation!!
 ---
 ## Refs
 - [HuggingFace - Datasets](https://huggingface.co/datasets)
@@ -57,3 +68,4 @@
 [^9]: Li, Dianqi, Yizhe Zhang, Hao Peng, Liqun Chen, Chris Brockett, Ming-Ting Sun, and William B. Dolan. "Contextualized Perturbation for Textual Adversarial Attack." In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pp. 5053-5069. 2021.
 [^10]: Li, J., S. Ji, T. Du, B. Li, and T. Wang. "TextBugger: Generating Adversarial Text Against Real-world Applications." In 26th Annual Network and Distributed System Security Symposium. 2019.
 [^11]: Yoo, Jin Yong, and Yanjun Qi. "Towards Improving Adversarial Training of NLP Models." In Findings of the Association for Computational Linguistics: EMNLP 2021, pp. 945-956. 2021.
+[^12]: Jia, Robin, Aditi Raghunathan, Kerem Göksel, and Percy Liang. "Certified Robustness to Adversarial Word Substitutions." In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pp. 4129-4142. 2019.
