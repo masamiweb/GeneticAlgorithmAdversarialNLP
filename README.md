@@ -1,6 +1,10 @@
 # Vulnerability of Natural Language Classifiers to Evolutionary Generated Adversarial Text
 
-## ToDo (last updated: 2021W44)
+## ToDo (last updated: 2022W4)
+- Experiments
+  - Datasets = ["mr", "ag-news", "imdb"]
+  - Classification_Models = ["lstm","bert", "cnn"]
+  - Attacks = ["bae", "a2t", "textfooler", "textbugger", "##ours##"]
 - [Mohamed] Paper section 2 (related work) + investigating implementaiton
 - [Sandy] Paper section 5 (results) + investigating implementaiton
 - [Mani] Check sections 3-5 for other resources (refs, datasets, etc...) 
@@ -33,7 +37,7 @@
 - Table: black-box attack evaluation (datasets, text classification models, attack models, original accuracy, adversarial accuracy, % Perturbed Word, Semantic Similarity, Query Number, Average Text Length)
 - Table: runtime comparison (attack models vs datasets)
 - Table: datasets stats
-- Graph: attack effectiveness over dataset (x-axis: max % perturbation, y-axis: test accuracy, lines: attack models)
+- Graph: attack effectiveness over dataset (x-axis: max % perturbation, y-axis: test accuracy, lines: attack models) --> Not possible!! Needs edits over attack implementations.
 - Table: Qualitative examples (attack models vs datasets) showing replacements and insertions
 ---
 ## Colab Notebooks
