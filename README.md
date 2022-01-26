@@ -53,8 +53,8 @@
 - [[bug]NLP_TextAttack_Test_api--Bug-mr__cnn__a2t](https://colab.research.google.com/drive/10pV0ArRPIG0DjmgPjIXZhldCLRAciYbP?usp=sharing) -- [reported bug](https://github.com/QData/TextAttack/issues/601)
 - [[semi-bug]NLP_TextAttack_Test_api--Bug-mr__lstm__bert-attack](https://colab.research.google.com/drive/1Efk4dp9gHrtvTkSIv_KxY8l6J808BCx1?usp=sharing) -- under investigation!!
 - TO RUN:
-  -  ag-news__ bert __ ** : running now!
-  -  imdb __ bert __ ** : next to run!
+  -  ag-news__ bert __ ** : done!
+  -  imdb __ bert __ ** : running!
   -  ** __ ** __ bert-attack : next to run!
   -  ** __ cnn __ a2t : error to fix!
 
