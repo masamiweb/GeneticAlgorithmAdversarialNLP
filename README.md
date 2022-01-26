@@ -5,9 +5,9 @@
   - Datasets = ["mr", "ag-news", "imdb"]
   - Classification_Models = ["lstm","bert", "cnn"]
   - Attacks = ["bae", "a2t", "textfooler", "textbugger", "##ours##"]
-- [Mohamed] Paper section 2 (related work) + investigating implementaiton
-- [Sandy] Paper section 5 (results) + investigating implementaiton
-- [Mani] Check sections 3-5 for other resources (refs, datasets, etc...) 
+- [Mohamed] Finish experiments and start paper writing (e.g. tables, metrics).
+- [Sandy] Finish proposed implementation.
+- [Mani] Do proof reading.
 ---
 ## Datasets
 - [IMDB link1](https://datasets.imdbws.com) -- [IMDB link2](http://ai.stanford.edu/~amaas/data/sentiment/)
