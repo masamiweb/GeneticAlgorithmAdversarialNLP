@@ -2,7 +2,7 @@
 
 ## ToDo (last updated: 2022W4)
 - Experiments
-  - Datasets = ["mr", "ag-news", "imdb"]
+  - Datasets = ["mr", "ag-news", "imdb", "yelp"]
   - Classification_Models = ["lstm","bert", "cnn"]
   - Attacks = ["bae", "a2t", "textfooler", "textbugger", "##ours##"]
 - [Mohamed] Finish experiments and start paper writing (e.g. tables, metrics).
@@ -58,7 +58,8 @@
 - [[semi-bug]NLP_TextAttack_Test_api--Bug-mr__lstm__bert-attack](https://colab.research.google.com/drive/1Efk4dp9gHrtvTkSIv_KxY8l6J808BCx1?usp=sharing) -- under investigation!!
 - TO RUN:
   -  ag-news__ bert __ ** : done!
-  -  imdb __ bert __ ** : running!
+  -  imdb __ bert __ ** : done!
+  -  yelp __ ** __ ** : running!
   -  ** __ ** __ bert-attack : next to run!
   -  ** __ cnn __ a2t : error to fix!
 
