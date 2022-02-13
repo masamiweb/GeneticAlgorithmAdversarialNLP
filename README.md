@@ -59,8 +59,8 @@
 - TO RUN:
   -  ag-news__ bert __ ** : done!
   -  imdb __ bert __ ** : done!
-  -  yelp __ ** __ ** : running!
-  -  ** __ ** __ bert-attack : next to run!
+  -  yelp __ ** __ ** : done!
+  -  ** __ ** __ bert-attack : running!
   -  ** __ cnn __ a2t : error to fix!
 
 ---
