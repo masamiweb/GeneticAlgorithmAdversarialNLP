@@ -60,7 +60,7 @@
   -  ag-news__ bert __ ** : done!
   -  imdb __ bert __ ** : done!
   -  yelp __ ** __ ** : done!
-  -  ** __ ** __ bert-attack : running!
+  -  ** __ ** __ bert-attack : error (freeze)!
   -  ** __ cnn __ a2t : error to fix!
 
 ---
