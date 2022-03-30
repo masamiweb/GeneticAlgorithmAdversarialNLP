@@ -1,5 +1,7 @@
 # Vulnerability of Natural Language Classifiers to Evolutionary Generated Adversarial Text
 
+## [Results in Google spreadsheet](https://docs.google.com/spreadsheets/d/1n1tqPyxtPwdFt8XGoS9Cc_D5nrercAXx1P8PfqgLwzk/edit?usp=sharing)
+
 ## ToDo (last updated: 2022W4)
 - Experiments
   - Datasets = ["mr", "ag-news", "imdb", "yelp"]
