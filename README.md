@@ -48,7 +48,7 @@
 - [TextAttack-Playground-API](https://colab.research.google.com/drive/1uU4xYNGfpvv-H2eirRr9U67GYTkMoBnm?usp=sharing)
 - [TextAttack-Playground-API-V2](https://colab.research.google.com/drive/1seoSdC419jxFsJotr3m39AIhjDuV21co?usp=sharing)
 - [NLP_TextAttack_Test_api--V3--SB-MN](https://colab.research.google.com/drive/17bstCgQ8TPocFXRVUtHW4NsOD2kyYJO9?usp=sharing) --> Issue in replace=False
-- [NLP_TextAttack_Test_api--V4--SB-MN](https://colab.research.google.com/drive/1meFoEkyU_e4MCUIamoK25l942ONHtAXF#scrollTo=obkXVaBm0sVG?usp=sharing) 
+- [NLP_TextAttack_Test_api--V4--SB-MN](https://colab.research.google.com/drive/1meFoEkyU_e4MCUIamoK25l942ONHtAXF#scrollTo=obkXVaBm0sVG?usp=sharing) --> ManjinderMethodB contraints changed
 
 
 ## Notes:
